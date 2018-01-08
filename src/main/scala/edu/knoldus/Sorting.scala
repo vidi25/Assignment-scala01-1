@@ -28,8 +28,9 @@ class Sorting {
       min = i
       for(j <- i + 1 until arrayLength)
       {
-        if(array(j) < array(min))
+        if(array(j) < array(min)) {
           min = j
+        }
         val temp:Int = array(min)
         array(min) = array(i)
         array(i) = temp

@@ -24,7 +24,9 @@ class Searching {
   }
 
   def binarySearch(array: Array[Int], elem: Int): Boolean = {
-    bSearch(array,elem,0,array.length - 1)
+   if( bSearch(array,elem,0,array.length - 1) == -1) {
+     return false
+   }
     true
   }
 
